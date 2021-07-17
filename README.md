@@ -7,9 +7,12 @@ Check this out: **[Click Here](https://sumanksah.github.io/TODO-WebApp/)**
 
 ### Sample Images:
 
-<table>
+<!-- <table>
     <tr>
     <td> <img src="Images/InterfaceImage.png" width=400 ></td>
     <td> <img src="Images/TaskImage.png" width=400 ></td>
     </tr>
 </table>
+ -->
+![Interface Image](Images/InterfaceImage.png) <br>
+![Task Image](Images/TaskImage.png)
