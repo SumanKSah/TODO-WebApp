@@ -3,7 +3,20 @@ window.onload = function () {
     let btnAddTask = document.getElementById("btnAddTask");
     let listGroup = document.getElementById("content");
 
-    btnAddTask.onclick = function () {
+    txtAddTask.focus()
+
+    txtAddTask.addEventListener("keyup",(event)=>{
+        if(event.key === 'Enter'){
+            manageTask()
+        }
+    })
+
+    btnAddTask.addEventListener("click", function () {
+        manageTask()
+    });
+
+    function manageTask(){
+        
         if (txtAddTask.value === "") {
             alert("Write some Task first!!");
             return;
@@ -17,6 +30,8 @@ window.onload = function () {
         listText.id = "listText";
 
         let btnDelete = document.createElement("button");
+        btnDelete.style.border = "none"
+        btnDelete.style.marginRight = "3px"
         btnDelete.innerText = "❌";
         btnDelete.id = "btnDelete";
 
@@ -46,5 +61,5 @@ window.onload = function () {
         listGroup.appendChild(listItem);
 
         txtAddTask.value = "";
-    };
+    }
 };
